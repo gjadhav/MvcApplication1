@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Code To Making a List Item Sortable in ASP.NET MVC3 Using jquery";
+}
+<h3>Shortable List Item</h3>
+<style type="text/css">
+#sortableItem { list-style-type: none; margin: 0; padding: 0; width: 30%; }
+#sortableItem li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.0em; height: 15px; }
+#sortableItem li span { position: absolute; margin-left: -1.3em; }
+</style>
+<script type="text/javascript">
+    $(function () {
+        $("#sortableItem").sortable();
+        $("#sortableItem").disableSelection();
+    });
+</script>
+
+<ul id="sortableItem">
+<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>List Item 1</li>
+<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>List Item 2</li>
+<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>List Item 3</li>
+<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>List Item 4</li>
+<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>List Item 5</li>
+</ul>
